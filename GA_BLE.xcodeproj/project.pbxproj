@@ -7,25 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DCC53B1B1BB3C79000B91C55 /* GA_BMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC53B1A1BB3C79000B91C55 /* GA_BMViewController.swift */; };
 		DCD9AA611BB2789E007E7294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD9AA601BB2789E007E7294 /* AppDelegate.swift */; };
 		DCD9AA631BB2789E007E7294 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD9AA621BB2789E007E7294 /* ViewController.swift */; };
 		DCD9AA661BB2789E007E7294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD9AA641BB2789E007E7294 /* Main.storyboard */; };
 		DCD9AA681BB2789E007E7294 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD9AA671BB2789E007E7294 /* Images.xcassets */; };
 		DCD9AA6B1BB2789E007E7294 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCD9AA691BB2789E007E7294 /* LaunchScreen.xib */; };
-		DCD9AA771BB2789E007E7294 /* GA_BLETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD9AA761BB2789E007E7294 /* GA_BLETests.swift */; };
+		DCD9AA811BB27ED8007E7294 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD9AA801BB27ED8007E7294 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		DCD9AA711BB2789E007E7294 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DCD9AA531BB2789E007E7294 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DCD9AA5A1BB2789E007E7294;
-			remoteInfo = GA_BLE;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		DCC53B1A1BB3C79000B91C55 /* GA_BMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GA_BMViewController.swift; sourceTree = "<group>"; };
 		DCD9AA5B1BB2789E007E7294 /* GA_BLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GA_BLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD9AA5F1BB2789E007E7294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCD9AA601BB2789E007E7294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,9 +25,9 @@
 		DCD9AA651BB2789E007E7294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCD9AA671BB2789E007E7294 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DCD9AA6A1BB2789E007E7294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		DCD9AA701BB2789E007E7294 /* GA_BLETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GA_BLETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD9AA751BB2789E007E7294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCD9AA761BB2789E007E7294 /* GA_BLETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GA_BLETests.swift; sourceTree = "<group>"; };
+		DCD9AA801BB27ED8007E7294 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,13 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DCD9AA6D1BB2789E007E7294 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				DCD9AA811BB27ED8007E7294 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +45,7 @@
 		DCD9AA521BB2789E007E7294 = {
 			isa = PBXGroup;
 			children = (
+				DCD9AA801BB27ED8007E7294 /* CoreBluetooth.framework */,
 				DCD9AA5D1BB2789E007E7294 /* GA_BLE */,
 				DCD9AA731BB2789E007E7294 /* GA_BLETests */,
 				DCD9AA5C1BB2789E007E7294 /* Products */,
@@ -69,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				DCD9AA5B1BB2789E007E7294 /* GA_BLE.app */,
-				DCD9AA701BB2789E007E7294 /* GA_BLETests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +65,7 @@
 			children = (
 				DCD9AA601BB2789E007E7294 /* AppDelegate.swift */,
 				DCD9AA621BB2789E007E7294 /* ViewController.swift */,
+				DCC53B1A1BB3C79000B91C55 /* GA_BMViewController.swift */,
 				DCD9AA641BB2789E007E7294 /* Main.storyboard */,
 				DCD9AA671BB2789E007E7294 /* Images.xcassets */,
 				DCD9AA691BB2789E007E7294 /* LaunchScreen.xib */,
@@ -132,24 +119,6 @@
 			productReference = DCD9AA5B1BB2789E007E7294 /* GA_BLE.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DCD9AA6F1BB2789E007E7294 /* GA_BLETests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DCD9AA7D1BB2789E007E7294 /* Build configuration list for PBXNativeTarget "GA_BLETests" */;
-			buildPhases = (
-				DCD9AA6C1BB2789E007E7294 /* Sources */,
-				DCD9AA6D1BB2789E007E7294 /* Frameworks */,
-				DCD9AA6E1BB2789E007E7294 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DCD9AA721BB2789E007E7294 /* PBXTargetDependency */,
-			);
-			name = GA_BLETests;
-			productName = GA_BLETests;
-			productReference = DCD9AA701BB2789E007E7294 /* GA_BLETests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +130,7 @@
 				TargetAttributes = {
 					DCD9AA5A1BB2789E007E7294 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					DCD9AA6F1BB2789E007E7294 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = DCD9AA5A1BB2789E007E7294;
+						DevelopmentTeam = 3T975E2R33;
 					};
 				};
 			};
@@ -182,7 +148,6 @@
 			projectRoot = "";
 			targets = (
 				DCD9AA5A1BB2789E007E7294 /* GA_BLE */,
-				DCD9AA6F1BB2789E007E7294 /* GA_BLETests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,13 +163,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCD9AA6E1BB2789E007E7294 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -214,26 +172,11 @@
 			files = (
 				DCD9AA631BB2789E007E7294 /* ViewController.swift in Sources */,
 				DCD9AA611BB2789E007E7294 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DCD9AA6C1BB2789E007E7294 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DCD9AA771BB2789E007E7294 /* GA_BLETests.swift in Sources */,
+				DCC53B1B1BB3C79000B91C55 /* GA_BMViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DCD9AA721BB2789E007E7294 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DCD9AA5A1BB2789E007E7294 /* GA_BLE */;
-			targetProxy = DCD9AA711BB2789E007E7294 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DCD9AA641BB2789E007E7294 /* Main.storyboard */ = {
@@ -272,7 +215,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kui Zhang (H6LPMW7WXY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kui Zhang (H6LPMW7WXY)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -294,6 +238,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "b6c64c98-be4b-4e57-9e8d-8a789aca78fe";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -331,6 +276,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "b6c64c98-be4b-4e57-9e8d-8a789aca78fe";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -340,9 +286,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GA_BLE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -350,43 +300,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GA_BLE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		DCD9AA7E1BB2789E007E7294 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GA_BLETests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GA_BLE.app/GA_BLE";
-			};
-			name = Debug;
-		};
-		DCD9AA7F1BB2789E007E7294 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GA_BLETests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GA_BLE.app/GA_BLE";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -409,14 +329,7 @@
 				DCD9AA7C1BB2789E007E7294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		DCD9AA7D1BB2789E007E7294 /* Build configuration list for PBXNativeTarget "GA_BLETests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DCD9AA7E1BB2789E007E7294 /* Debug */,
-				DCD9AA7F1BB2789E007E7294 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
